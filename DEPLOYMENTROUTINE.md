@@ -94,3 +94,16 @@ Render tells you the site is "Live", navigate to your site URL and view Birdsy
 in all its glory!
 
 ---
+
+
+we had to remove the vite proxy because it only runs during development, code below:
+
+proxy: {
+      "/api":{
+        // we can adjust the target based on our backend port
+        target: "http://127.0.0.1:8000",
+        changeOrigin:true,
+        secure: false,
+        rewrite: (path)=>path.replace(/^\/api/,"")
+      }
+    }
