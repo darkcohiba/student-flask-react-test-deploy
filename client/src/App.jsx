@@ -26,7 +26,8 @@ function App() {
   //   .then(response => response.json())
   //   .then(data => console.log(data))
   // },[])
-  const url = "https://flask-test-student.onrender.com/"
+
+  const url = "https://flask-test-student.onrender.com/api/students"
   const fetcher = (url) => fetch(url).then((res) => res.json());
   const { data, error } = useSWR(url, fetcher);
   const [students, setStudents] = useState([]);
