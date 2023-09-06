@@ -5,11 +5,20 @@ import './App.css'
 
 function App() {
 
+
+  // deployed fetch
+  http://0.0.0.0:10000
   useEffect(()=>{
-    fetch('http://127.0.0.1:8000/api/students')
+    fetch('  http://0.0.0.0:10000/api/students')
     .then(response => response.json())
     .then(data => console.log(data))
   },[])
+  // local fetch
+  // useEffect(()=>{
+  //   fetch('http://127.0.0.1:8000/api/students')
+  //   .then(response => response.json())
+  //   .then(data => console.log(data))
+  // },[])
 
   return (
     <>
