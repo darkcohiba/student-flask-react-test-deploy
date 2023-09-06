@@ -40,10 +40,10 @@ function App() {
   }, [data]);
 
   if (error) {
-    return <div>Failed to load students</div>;
+    return <div><p>App Page</p><p>Failed to load students</p></div>;
   }
   if (!data) {
-    return <div>Loading...</div>;
+    return <div><p>App Page</p><p>Loading...</p></div>;
   }
 
 
