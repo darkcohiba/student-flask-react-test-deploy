@@ -39,8 +39,6 @@ function App() {
     }
   }, [data]);
 
-
-
   if (error) {
     return <div>Failed to load students</div>;
   }

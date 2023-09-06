@@ -4,7 +4,7 @@ function StudentList({ students }) {
         <div>StudentList
             <ul>
                 {students.map((student, index) => (
-                    <li key={index}>{student.name}</li>
+                    <StudentCard key={index} student={student}/>
                 ))}
             </ul>
         </div>
