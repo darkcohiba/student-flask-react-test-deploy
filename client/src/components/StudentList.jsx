@@ -1,3 +1,4 @@
+import StudentCard from './StudentCard'
 
 function StudentList({ students }) {
     return (
