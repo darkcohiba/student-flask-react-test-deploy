@@ -1,6 +1,4 @@
 import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import StudentList from './components/StudentList'
 import useSWR from 'swr';
@@ -28,9 +26,9 @@ function App() {
   //   .then(response => response.json())
   //   .then(data => console.log(data))
   // },[])
-
+  const url = "https://flask-test-student.onrender.com/"
   const fetcher = (url) => fetch(url).then((res) => res.json());
-  const { data, error } = useSWR('https://flask-student-jo7j.onrender.com/api/students', fetcher);
+  const { data, error } = useSWR(url, fetcher);
   const [students, setStudents] = useState([]);
 
   useEffect(() => {
