@@ -6,10 +6,17 @@ import './App.css'
 function App() {
 
 
+    // deployed fetch
+    // https://flask-student-jo7j.onrender.com/
+    useEffect(()=>{
+      fetch('https://flask-student-jo7j.onrender.com/api/students')
+      .then(response => response.json())
+      .then(data => console.log(data))
+    },[])
   // deployed fetch
-  http://0.0.0.0:10000
+  // http://0.0.0.0:10000
   useEffect(()=>{
-    fetch('  http://0.0.0.0:10000/api/students')
+    fetch('http://0.0.0.0:10000/api/students')
     .then(response => response.json())
     .then(data => console.log(data))
   },[])
