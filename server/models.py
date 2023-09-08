@@ -17,7 +17,7 @@ class Teacher(db.Model, SerializerMixin):
     serialize_rules = ('-student_relationship.teacher',)
 
 
-    student_relationship = relationship("Student", backref="teacher")
+    student_relationship = relationship("Student", backref="teacher", cascade="all, delete, delete-orphan")
 
 
     @validates('favorite_subject')
@@ -48,3 +48,7 @@ class Student(db.Model, SerializerMixin):
             raise ValueError(f"{subject} is not a valid favorite subject. Choose from {allowed_subjects}")
         return subject
 
+class AlembicVersion(db.Model):
+    __tablename__ = 'alembic_version'
+    
+    version_num = db.Column(db.String, primary_key=True)
