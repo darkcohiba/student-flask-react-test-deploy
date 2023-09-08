@@ -53,7 +53,7 @@ if __name__ == '__main__':
         # db.session.add_all(students)
         # db.session.commit()
 
-        # delete and create
+        # solution to delete migration versions
         # versions = db.session.query(AlembicVersion)
         # for version in versions:
         #     print(version)
@@ -63,7 +63,7 @@ if __name__ == '__main__':
         # print(versions)
         # db.session.delete(versions)
         
-
+        # delete and create
         # db.session.query(Teacher).delete()
         # db.session.query(Student).delete()
         # db.drop_all()
