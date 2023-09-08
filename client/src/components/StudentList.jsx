@@ -1,5 +1,7 @@
 import StudentCard from './StudentCard'
 import { useState, useEffect } from 'react';
+import useSWR from 'swr';
+
 
 function StudentList() {
 

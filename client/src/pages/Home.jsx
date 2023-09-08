@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import StudentList from '../components/StudentList'
-import useSWR from 'swr';
 import TeacherList from '../components/TeacherList';
 
 

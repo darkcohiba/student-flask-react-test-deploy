@@ -1,5 +1,7 @@
 import TeacherCard from './TeacherCard'
 import { useState, useEffect} from 'react'
+import useSWR from 'swr';
+
 
 function TeacherList() {
 
