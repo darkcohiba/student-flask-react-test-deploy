@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-import StudentList from '../components/StudentList'
-import TeacherList from '../components/TeacherList';
+// import StudentList from '../components/StudentList'
+// import TeacherList from '../components/TeacherList';
 
 
 function Home() {
@@ -33,8 +33,7 @@ function Home() {
     return (
         <>
             <p>App Page</p>
-            <StudentList />
-            <TeacherList />
+            <p>Welcome to our Teacher and Student Database. Please choose a link from the above navbar to view teachers or students.</p>
         </>
     )
 }
